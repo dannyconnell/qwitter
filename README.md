@@ -58,6 +58,14 @@ sudo npm install -g cordova
 quasar dev -m cordova -T ios
 ```
 
+### Start on other Simulator Devices
+```bash
+cd src-cordova
+cordova run ios --list
+cd ..
+quasar dev -m cordova -T ios -e "iPhone-12, 14.3"
+```
+
 ### Build for production
 ```bash
 quasar build -m cordova -T ios
